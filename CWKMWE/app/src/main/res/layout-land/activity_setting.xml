@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+
+    <TextView
+        android:id="@+id/textBgColour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/background_text"
+        app:layout_constraintStart_toStartOf="@+id/buttonReturn"
+        app:layout_constraintTop_toBottomOf="@+id/buttonReturn" />
+
+    <TextView
+        android:id="@+id/textSongSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/songspeed_text"
+        app:layout_constraintBottom_toTopOf="@+id/seekBarPlayback"
+        app:layout_constraintEnd_toEndOf="@+id/seekBarPlayback" />
+
+    <Button
+        android:id="@+id/buttonReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/tracklist_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/green_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="6dp"
+        android:text="@string/red_button"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBlue"
+        app:layout_constraintEnd_toStartOf="@+id/seekBarPlayback"
+        app:layout_constraintStart_toEndOf="@+id/buttonGreen" />
+
+    <Button
+        android:id="@+id/buttonBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/blue_button"
+        app:layout_constraintStart_toStartOf="@+id/buttonRed"
+        app:layout_constraintTop_toTopOf="@+id/buttonWhite" />
+
+    <Button
+        android:id="@+id/buttonWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/white_button"
+        app:layout_constraintStart_toStartOf="@+id/buttonGreen"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGreen" />
+
+    <SeekBar
+        android:id="@+id/seekBarPlayback"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="268dp"
+        android:layout_marginBottom="30dp"
+        android:progress="2"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGPS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonRed" />
+
+    <Button
+        android:id="@+id/buttonGPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="108dp"
+        android:text="@string/gps_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/seekBarPlayback" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

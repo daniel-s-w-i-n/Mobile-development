@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">CWK-MDP</string>
+    <string name="pause_button">Pause</string>
+    <string name="play_button">Play</string>
+    <string name="stop_button">Stop</string>
+    <string name="skip_button">Skip</string>
+    <string name="track_button">Track List</string>
+    <string name="bookmark_button">Bookmark</string>
+    <string name="audioplayer_text">Audio Player</string>
+    <string name="progress_text">Progress</string>
+    <string name="song_text">Song</string>
+    <string name="playback_text">Song Speed is : 1</string>
+
+    <string name="setting_button">Settings</string>
+    <string name="trackList_text">Track List</string>
+    <string name="bookmarks_text">Bookmark List</string>
+
+    <string name="gps_button">Audio Walk : off</string>
+    <string name="red_button">Red</string>
+    <string name="green_button">Green</string>
+    <string name="white_button">White</string>
+    <string name="blue_button">Blue</string>
+    <string name="tracklist_button">Track List</string>
+    <string name="background_text">Background Colour</string>
+    <string name="songspeed_text">Speed Of Song : 1</string>
+
+</resources>

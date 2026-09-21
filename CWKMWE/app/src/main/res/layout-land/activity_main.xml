@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="333dp"
+        android:layout_marginBottom="73dp"
+        android:text="@string/audioplayer_text"
+        app:layout_constraintBottom_toTopOf="@+id/textSong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonTrack"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/pause_button"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPlayback"
+        app:layout_constraintEnd_toStartOf="@+id/textSong"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/play_button"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPlayback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textSong" />
+
+    <Button
+        android:id="@+id/buttonSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="323dp"
+        android:layout_marginEnd="320dp"
+        android:text="@string/skip_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.86" />
+
+    <TextView
+        android:id="@+id/textProgress"
+        android:layout_width="407dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="222dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="222dp"
+        android:layout_marginBottom="34dp"
+        android:gravity="center"
+        android:text="@string/progress_text"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSkip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPlayback" />
+
+    <Button
+        android:id="@+id/buttonTrack"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="185dp"
+        android:layout_marginBottom="111dp"
+        android:text="@string/track_button"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStop"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonBookmark"
+        android:layout_width="120dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/bookmark_button"
+        app:layout_constraintBottom_toTopOf="@+id/textProgress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewPlayback"
+        app:layout_constraintTop_toTopOf="@+id/textViewPlayback" />
+
+    <TextView
+        android:id="@+id/textSong"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="38dp"
+        android:gravity="center"
+        android:text="@string/song_text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonPause"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPlay"
+        app:layout_constraintStart_toEndOf="@+id/buttonPause" />
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="48dp"
+        android:text="@string/stop_button"
+        app:layout_constraintEnd_toStartOf="@+id/textViewPlayback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewPlayback" />
+
+    <TextView
+        android:id="@+id/textViewPlayback"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:text="@string/songspeed_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonBookmark"
+        app:layout_constraintStart_toEndOf="@+id/buttonStop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
